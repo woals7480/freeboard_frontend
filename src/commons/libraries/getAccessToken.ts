@@ -1,6 +1,5 @@
 import { GraphQLClient, gql } from "graphql-request";
 import { IMutation } from "../types/generated/types";
-import { Modal } from "antd";
 
 const RESTORE_ACCESS_TOKEN = gql`
   mutation restoreAccessToken {
@@ -10,7 +9,7 @@ const RESTORE_ACCESS_TOKEN = gql`
   }
 `;
 
-export const getAccessToken = async (): Promise<string | undefined> => {
+export const getAccessToken = async () => {
   try {
     const graphQLClient = new GraphQLClient(
       "https://backend-practice.codebootcamp.co.kr/graphql",
@@ -21,9 +20,5 @@ export const getAccessToken = async (): Promise<string | undefined> => {
     >(RESTORE_ACCESS_TOKEN);
     const newAccessToken = result.restoreAccessToken.accessToken;
     return newAccessToken;
-  } catch (error) {
-    if (error instanceof Error) {
-      Modal.error({ content: error.message });
-    }
-  }
+  } catch (error) {}
 };

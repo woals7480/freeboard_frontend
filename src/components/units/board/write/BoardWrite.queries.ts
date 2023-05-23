@@ -23,3 +23,32 @@ export const UPDATE_BOARD = gql`
     }
   }
 `;
+
+export const UPLOAD_FILE = gql`
+  mutation uploadFile($file: Upload!) {
+    uploadFile(file: $file) {
+      _id
+      url
+    }
+  }
+`;
+
+export const FETCH_BOARDS = gql`
+  query fetchBoards($page: Int, $search: String) {
+    fetchBoards(page: $page, search: $search) {
+      writer
+      title
+      contents
+      createdAt
+      _id
+      likeCount
+      dislikeCount
+      images
+      boardAddress {
+        zipcode
+        address
+        addressDetail
+      }
+    }
+  }
+`;

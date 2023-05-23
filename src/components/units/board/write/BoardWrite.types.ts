@@ -1,5 +1,10 @@
+import {
+  FormState,
+  UseFormHandleSubmit,
+  UseFormRegister,
+} from "react-hook-form";
 import { IQuery } from "../../../../commons/types/generated/types";
-import { ChangeEvent } from "react";
+
 import { Address } from "react-daum-postcode";
 
 export interface IBoardWriteProps {
@@ -7,43 +12,32 @@ export interface IBoardWriteProps {
   data?: Pick<IQuery, "fetchBoard">;
 }
 
-export interface IUpdateInputProps {
-  title?: string;
-  contents?: string;
-  youtubeUrl?: string;
-  boardAddress?: {
-    zipcode?: string;
-    address?: string;
-    addressDetail?: string;
-  };
-  images?: string[];
-}
-
 export interface IBoardWriteUIProps {
-  writerError: string;
-  passwordError: string;
-  titleError: string;
-  contentsError: string;
-  onChangeWriter: (event: ChangeEvent<HTMLInputElement>) => void;
-  onChangePassword: (event: ChangeEvent<HTMLInputElement>) => void;
-  onChangeTitle: (event: ChangeEvent<HTMLInputElement>) => void;
-  onChangeContents: (event: ChangeEvent<HTMLTextAreaElement>) => void;
-  onChangeAddressDetail: (event: ChangeEvent<HTMLInputElement>) => void;
-  onChangeYoutubeUrl: (event: ChangeEvent<HTMLInputElement>) => void;
-  onChangeFileUrls: (fileUrl: string, index: number) => void;
-  onClickSubmit: () => void;
-  onClickUpdate: () => void;
-  isActive: boolean;
+  onCompleteaddressDetailSearch: (data: Address) => void;
   isEdit: boolean;
   isOpen: boolean;
-  onCompleteAddressSearch: (data: Address) => void;
   onToggleModal: () => void;
-  zipcode: string;
-  address: string;
-  fileUrls: string[];
+  imageUrls: string[];
+  onChangeFileUrls: (fileUrl: string, file: File, index: number) => void;
   data?: Pick<IQuery, "fetchBoard">;
+  register: UseFormRegister<IFormData>;
+  handleSubmit: UseFormHandleSubmit<IFormData>;
+  formState: FormState<IFormData>;
+  onClickSubmit: (data: IFormData) => void;
+  onClickUpdate: (data: IFormData) => void;
 }
 
 export interface ISubmitButtonProps {
   isActive: boolean;
+}
+
+export interface IFormData {
+  writer: string;
+  title: string;
+  contents: string;
+  youtubeUrl?: string;
+  zipcode?: string;
+  address?: string;
+  addressDetail?: string;
+  password?: string;
 }

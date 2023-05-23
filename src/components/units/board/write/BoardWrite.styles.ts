@@ -1,7 +1,8 @@
 import styled from "@emotion/styled";
-import { ISubmitButtonProps } from "./BoardWrite.types";
 import { Modal } from "antd";
 import DaumPostcodeEmbed from "react-daum-postcode";
+
+export const WriterForm = styled.form``;
 
 export const Wrapper = styled.div`
   width: 1200px;
@@ -135,8 +136,7 @@ export const ButtonWrapper = styled.div`
 export const SubmitButton = styled.button`
   width: 179px;
   height: 52px;
-  background-color: ${(props: ISubmitButtonProps) =>
-    props.isActive ? "gold" : "default"};
+
   border: none;
   cursor: pointer;
 `;

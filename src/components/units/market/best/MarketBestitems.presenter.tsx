@@ -30,7 +30,9 @@ export default function MarketBestitemsPageUI(
               <S.TextWrapper>
                 <S.Name>{el.name}</S.Name>
                 <S.Remarks>{el.remarks}</S.Remarks>
-                <S.Price>{el.price}</S.Price>
+                <S.Price>
+                  {el.price?.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}원
+                </S.Price>
               </S.TextWrapper>
               <S.PickedWrapper>
                 <S.PickedIcon>
