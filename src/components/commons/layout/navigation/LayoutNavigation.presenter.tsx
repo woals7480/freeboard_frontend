@@ -3,9 +3,9 @@ import * as S from "./LayoutNavigation.styles";
 import { ILayoutNavigationProps } from "./LayoutNavigation.type";
 
 const NAVIGATION_MENUS = [
-  { name: "나의파이어베이스", page: "/myfirebase" },
-  { name: "라이브게시판", page: "/boards" },
-  { name: "라이브상품", page: "/markets" },
+  { name: "파이어베이스게시판", page: "/myfirebase" },
+  { name: "자유게사판", page: "/boards" },
+  { name: "상품게시판", page: "/markets" },
   { name: "마이페이지", page: "/mypages/myprofile" },
 ];
 
