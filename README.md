@@ -2,11 +2,22 @@
 
 `딸기마켓`은 `Next.js`와 `GraphQL`을 기반으로 한 중고물품거래 사이트이다.
 
+
+
 ## 화면구성
 
 |자유게시판|게시물등록|
-|---|---|
-|<img src="https://user-images.githubusercontent.com/94383932/241244476-f347cd17-d2fc-4b1b-8997-45051a8d2b9c.gif" width="600px"/>|<img src="https://user-images.githubusercontent.com/94383932/241247871-09799c72-d760-4dce-aa5c-04adeb8d404e.gif" width="600px" />
+|:---:|:---:|
+|<img src="https://user-images.githubusercontent.com/94383932/241244476-f347cd17-d2fc-4b1b-8997-45051a8d2b9c.gif" width="600px"/>|<img src="https://user-images.githubusercontent.com/94383932/241247871-09799c72-d760-4dce-aa5c-04adeb8d404e.gif" width="600px" />|
+|게시물 상세|게시물수정|
+|<img src="https://user-images.githubusercontent.com/94383932/241248539-31bdf434-dfa3-41c9-b033-9f518582e61d.gif" width="600px" />|<img src="https://user-images.githubusercontent.com/94383932/241249595-4a4b728c-3122-44de-91d5-456c044f5296.gif" width="600px" />|
+|상품페이지|상품등록|
+<img src="https://user-images.githubusercontent.com/94383932/241250290-4a26fe60-8758-4904-b1bb-95c92843b618.png" width="600px" />|<img src="https://user-images.githubusercontent.com/94383932/241250565-42497aaf-d14f-431e-a325-8913e1bcec8e.gif" width="600px" />
+|상품 상세|상품수정|
+<img src="https://user-images.githubusercontent.com/94383932/241250993-67cc396d-b746-4928-92fa-9adb2b1a4919.gif" width="600px" />|<img src="https://user-images.githubusercontent.com/94383932/241251228-05248178-a923-4e05-b8f8-e872913b48ce.gif" width="600px" />
+|마이페이지|로그인|
+<img src="https://user-images.githubusercontent.com/94383932/241252460-508886b5-11ac-4601-8b3c-1cb03741683d.gif" width="600px" />|<img src="https://user-images.githubusercontent.com/94383932/241253329-590b17a8-6922-4e07-9546-121ee8254bfe.gif" width="600px" />
+
 
 
 
