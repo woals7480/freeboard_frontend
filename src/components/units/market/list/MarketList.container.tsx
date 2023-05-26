@@ -15,6 +15,7 @@ export default function MarketList(props: IMarketListProps) {
     Pick<IQuery, "fetchUseditems">,
     IQueryFetchUseditemsArgs
   >(FETCH_USED_ITEMS, { variables: { isSoldout } });
+
   const onLoadMore = () => {
     if (!data) return;
 

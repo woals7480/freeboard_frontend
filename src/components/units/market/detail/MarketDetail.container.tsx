@@ -95,6 +95,7 @@ export default function MarketDetail() {
     >({
       mutation: TOGGLE_USEDITEM_PICK,
       variables: { useditemId: String(router.query.marketId) },
+      refetchQueries: [{ query: FETCH_USEDITEMS_IPICKED }],
       update(cache, { data }) {
         cache.writeQuery({
           query: FETCH_USEDITEM,
