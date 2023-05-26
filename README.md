@@ -6,9 +6,16 @@
 
 ### ⭐️ 검색기능
 - Lodash의 디바운싱기능을 이용해 일정시간이 지난 후 추가적 입력이 없을때 검색이 되도록 구현하였다.
+<img src="https://user-images.githubusercontent.com/94383932/241235192-12b78233-452e-49a4-8463-b51c71fb443a.gif" width="800px" />
 
 ### ⭐️ 무한스크롤
 - react-infinite-scroller이라는 라이브러리를 사용하여 무한스크롤을 구현하였다.
+<img src="https://user-images.githubusercontent.com/94383932/241238171-1fb34301-e84c-41b2-a12d-c66209fc7a83.gif" width="800px" />
+
+### ⭐️ 결제기능
+- 포트원 API를 이용해 결제기능을 구현하였다.
+<img src="https://user-images.githubusercontent.com/94383932/241239940-cfbffb69-910e-4594-860d-83187a228988.gif" width="800px" />
+
 
 ### ⭐️ 카카오지도연동
 - 카카오맵 API를 이용해 지도를 구현하였다.
@@ -16,8 +23,7 @@
 ### ⭐️ 웹에디터
 - react-quill이라는 라이브러리를 사용하여 웹에디터를 구현하였다.
 
-### ⭐️ 웹에디터
-- 포트원 API를 이용해 결제기능을 구현하였다.
+
 
 ## Stacks
 
