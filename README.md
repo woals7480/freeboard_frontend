@@ -2,6 +2,14 @@
 
 `딸기마켓`은 `Next.js`와 `GraphQL`을 기반으로 한 중고물품거래 사이트이다.
 
+## 화면구성
+
+|자유게시판|게시물등록|
+|---|---|
+|<img src="https://user-images.githubusercontent.com/94383932/241244476-f347cd17-d2fc-4b1b-8997-45051a8d2b9c.gif" width="600px"/>|<img src="https://user-images.githubusercontent.com/94383932/241247871-09799c72-d760-4dce-aa5c-04adeb8d404e.gif" width="600px" />
+
+
+
 ## 주요기능
 
 ### ⭐️ 검색기능
