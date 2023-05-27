@@ -2,6 +2,20 @@
 
 `딸기마켓`은 `Next.js`와 `GraphQL`을 기반으로 한 중고물품거래 사이트이다.
 
+## 설치가이드
+```bash
+# CLONE REPOSITORY
+git clone https://github.com/woals7480/freeboard_frontend.git
+
+# INSTALLATION & COMPILATION
+yarn install
+yarn build
+
+# START SERVER
+yarn run start
+
+```
+
 ## 주요기능
 
 ### ⭐️ 검색기능
