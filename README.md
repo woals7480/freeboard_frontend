@@ -1,6 +1,12 @@
 # 딸기마켓
 
 `딸기마켓`은 `Next.js`와 `GraphQL`을 기반으로 한 중고물품거래 사이트이다.
+- Recoil을 사용한 Global-state 활용
+- 폼 라이브러리 react-hook-form, 검증 라이브러리 yup 활용
+- cache-state를 직접 업데이트하여 api호출 줄이기
+- URL.createObjectURL, Promiss.all()을 활용한 이미지업로드 최적화
+
+
 
 ## 설치가이드
 ```bash
