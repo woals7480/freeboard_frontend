@@ -14,6 +14,7 @@
 git clone https://github.com/woals7480/freeboard_frontend.git
 
 # INSTALLATION & COMPILATION
+npm install -g yarn
 yarn install
 yarn build
 
